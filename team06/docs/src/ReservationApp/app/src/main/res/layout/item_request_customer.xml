@@ -1,0 +1,36 @@
+<!-- customer_request_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_scheduled_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scheduled Date: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_request_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Date: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_store_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store ID: "
+        android:textSize="16sp" />
+
+    <!-- Optionally, add more details, like the request status -->
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment: "
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,312 @@
+<diagram program="umletino" version="15.1"><zoom_level>1</zoom_level><help_text>&lt;&lt;java class&gt;&gt;
+Request
+--
+- reservationID: int
+- storeID: int
+- cutomerId: int
+- requestDate: SimpleCalendar
+- requestTime: SimpleCalendar
+- numofpeople: int
+- reservationStatus: ReservationStatus
+- comment: int
+- ReservationStatus: enum
+--
++ Request(reservationID : int, storeID : int, customerId : int, numofpeople : int, 
+status : ReservationStatus, comment : String)
++ getReservationID() : int  
++ setReservationID(reservationID : int) : void  
++ getStoreID() : int  
++ setStoreID(storeID : int) : void  
++ getCustomerId() : int  
++ setCustomerId(customerId : int) : void  
++ getRequestDate() : SimpleCalendar  
++ getRequestTime() : SimpleCalendar  
++ getNumofpeople() : int  
++ setNumofpeople(numofpeople : int) : void  
++ getReservationStatus() : ReservationStatus  
++setReservationStatus(reservationStatus : ReservationStatus) : void  
++ getComment() : String  
++ setComment(comment : String) : void  
++ displayRequestDetails() : void  
++ isPending() : boolean  
++ approveRequest() : void  
++ rejectRequest() : void
+</help_text><element><id>UMLClass</id><coordinates><x>253</x><y>137</y><w>21</w><h>17</h></coordinates><panel_attributes>&lt;&lt;java class&gt;&gt;
+TelephoneNumber
+--
+- phonenumber : int
+--
++ TelephoneNumber(phonenumber: String)
++ getTelephoneNumber() : String
++  isValid() : boolean
++ equals(other: Object) : boolean
++ hasCode() : int
++ toString() : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>368</x><y>136</y><w>23</w><h>19</h></coordinates><panel_attributes>&lt;&lt;java class&gt;&gt;
+EmailAddress
+--
+- email : String
+--
++ EmailAddress(email: String)
++ getAddress() : String
++ isValid() : boolean
++ equals(other : Object) : boolean
++ hasCode() : int
++ toString() : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>198</x><y>352</y><w>21</w><h>19</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ZipCode
+--
+- zipcode: String
+--
++ ZipCode(zipcode: String)
++ getCode(): String
++ isValid(): boolean
++ equals(other: Object): boolean
++ hashCode(): int
++ toString(): String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>361</x><y>396</y><w>21</w><h>19</h></coordinates><panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+ReservationStatus
+--
+- PENDING
+- APPROVED
+- REJECTED
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>409</x><y>302</y><w>29</w><h>16</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+SearchStore
+--
+- allStores: List&lt;Store&gt;
+--
++ SearchStore(stores: List&lt;Store&gt;)
++ searchByName(name: String): List&lt;Store&gt;
++ filterByLocation(location: String): List&lt;Store&gt;
++ filterByType(type: String): List&lt;Store&gt;
++ displayStores(stores: List&lt;Store&gt;): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>175</x><y>186</y><w>73</w><h>31</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+StoreOwner
+--
+- ownerId: int
+- AFM: int
+- storeOwnerData: HashMap&lt;Integer, StoreOwner&gt;
+--
++ StoreOwner()
++ StoreOwner(ownerId: int, AFM: int, userName: String, email: EmailAddress, password: String, number: TelephoneNumber)
++ setOwnerId(ownerId: int): void
++ setAFM(AFM: int): void
++ getOwnerId(): int
++ getAFM(): int
++ setStoreOwnerData(storeOwnerData: HashMap&lt;Integer, StoreOwner&gt;): void
++ signUp(owner: StoreOwner): boolean
++ checkValidation(AFM: int): boolean
++ checksExistenceOfId(owner: StoreOwner): Boolean
++ checkExistenceOfUserName(userName: String): boolean
++ check(owner: StoreOwner): boolean
++ signIn(name: String, password: String): boolean
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>291</x><y>129</y><w>58</w><h>29</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+User
+--
+- userName: String
+- email: EmailAddress
+- password: String
+- number: TelephoneNumber
+--
++ User()
++ User(userName: String, email: EmailAddress, password: String, number: TelephoneNumber)
++ setUserName(userName: String): void
++ setEmail(email: EmailAddress): void
++ setPassword(password: String): void
++ setNumber(number: TelephoneNumber): void
++ getUserName(): String
++ getEmail(): EmailAddress
++ getPassword(): String
++ getNumber(): TelephoneNumber
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>281</x><y>341</y><w>57</w><h>21</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+ManageRequest
+--
+  - status: ReservationStatus
+--
+ + createRequest(store: Store, customer: Customer, numOfPeople: int, comment: String): Request
+  + acceptRequest(customer: Customer, store: Store, request: Request): void
+  + rejectRequest(request: Request): void
+  + cancelConflictingRequests(store: Store, customer: Customer, approvedRequest: Request): void
+  + isConflict(existingRequest: Request, approvedRequest: Request): boolean
+ + generateReservationId(store: Store): int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>446</x><y>188</y><w>75</w><h>42</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Customer
+--
+- customerId: int
+- name: String
+- comment: String
+- customerreservations: int
+- reservations: List&lt;Request&gt;
+- ratings: ArrayList&lt;Rate&gt;
+- manageRequest: ManageRequest
+- customerData: HashMap&lt;Integer, Customer&gt;
+--
++ Customer(customerId: int, name: String, userName: String, email: EmailAddress, password: String, number: TelephoneNumber)
++ getCustomerId(): int
++ setCustomerId(customerId: int): void
++ getName(): String
++ setName(name: String): void
++ getCustomerreservations(): int
++ setCustomerreservations(customerreservations: int): void
++ addReservation(request: Request): void
++ getReservations(): List&lt;Request&gt;
++ signUp(customer: Customer): boolean
++ checkValidation(tel: int): boolean
++ checksExistenceOfId(customer: Customer): Boolean
++ checkExistenceOfUserName(userName: String): boolean
++ check(customer: Customer): boolean
++ signIn(name: String, password: String): boolean
++ rateStore(storeId: int, rating: int, feedback: String): void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>274</x><y>377</y><w>69</w><h>47</h></coordinates><panel_attributes>package com.example.reservation.domain;
+Request
+--
+  Some Properties
+--
+  - reservationID: int
+  - storeID: int
+  - customerId: int
+  - requestDate: SimpleCalendar
+  - requestTime: SimpleCalendar
+  - numofpeople: int
+  - reservationStatus: ReservationStatus
+  - comment: String
+  --
+ + Request(reservationID: int, storeID: int, customerId: int, numofpeople: int, status: ReservationStatus, comment: String) 
+ + getReservationID(): int 
+ + setReservationID(reservationID: int) 
+ + getStoreID(): int 
+ + setStoreID(storeID: int) 
+ + getCustomerId(): int 
+ + setCustomerId(customerId: int) 
+ + getRequestDate(): SimpleCalendar 
+ + getRequestTime(): SimpleCalendar 
+ + setRequestDate(date: String) 
+ + setRequestTime(time: String) 
+ + displayRequestDetails() 
+ + getNumofpeople(): int 
+ + setNumofpeople(numofpeople: int) 
+ + getReservationStatus(): ReservationStatus 
+ + setReservationStatus(reservationStatus: ReservationStatus) 
+ + getComment(): String 
+ + setComment(comment: String) 
+  </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>188</x><y>134</y><w>42</w><h>32</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+SimpleCalendar
+--
+- date: Calendar
+--
++ SimpleCalendar(year: int, month: int, day: int) 
++ SimpleCalendar(year: int, month: int, day: int, hour: int, minute: int) 
++ SimpleCalendar(date: Calendar) 
++ durationInDays(other: SimpleCalendar): long 
+ + getYear(): int 
+ + getMonth(): int 
+ + getDayOfMonth(): int 
+ + getDayOfWeek(): int 
+ + getHour(): int 
+ + getMinute(): int 
+ + after(other: SimpleCalendar): boolean 
+ + before(other: SimpleCalendar): boolean 
+ + addDays(days: int): SimpleCalendar 
+ + compareTo(other: SimpleCalendar): int 
+ + equals(other: Object): boolean 
+ + hashCode(): int 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>294</x><y>475</y><w>25</w><h>15</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+ SystemDate
+--
+  - stub: SimpleCalendar
+  - stubDate: SimpleCalendar
+--
+ + SystemDate() 
+ + setStub(stubDate: SimpleCalendar) 
+ + removeStub() 
+ + now(): SimpleCalendar 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>207</x><y>216</y><w>7</w><h>47</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1..*
+has &gt;</panel_attributes><additional_attributes>20;10;10;450</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>157</y><w>111</w><h>31</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>1090;10;10;290</additional_attributes></element><element><id>Relation</id><coordinates><x>322</x><y>157</y><w>164</w><h>33</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;1620;310</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>404</y><w>21</w><h>3</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;190;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>184</x><y>318</y><w>49</w><h>19</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Address
+--
+- street: String
+- number: String
+- city: String
+- zip: ZipCode
+- country: String = "Ελλάδα"
+--
++ Address()
++ Address(address: Address)
++ Address(street: String, number: String, city: String, zip: ZipCode, country: String)
++ setStreet(street: String): void
++ getStreet(): String
++ setNumber(number: String): void
++ getNumber(): String
++ setCity(city: String): void
++ getCity(): String
++ setZipCode(zip: ZipCode): void
++ getZipCode(): ZipCode
++ setCountry(country: String): void
++ getCountry(): String
++ equals(other: Object): boolean
++ hashCode(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>336</y><w>3</w><h>18</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>307</y><w>3</w><h>13</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>178</x><y>262</y><w>62</w><h>47</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Store
+--
+- storeId: int
+- name: String
+- address: StoreAddress
+- type: String
+- capacity: int
+- tableNumber: int
+- usedCapacity: int = 0
+- requests: List&lt;Request&gt;
+- manageRequest: ManageRequest
+--
++ Store(storeId: int, name: String, address: StoreAddress, type: String, capacity: int, tableNumber: int)
++ setStoreId(storeId: int): void
++ setName(name: String): void
++ setAddress(address: StoreAddress): void
++ setType(type: String): void
++ setCapacity(capacity: int): void
++ setTableNumber(tableNumber: int): void
++ getStoreId(): int
++ getName(): String
++ getAddress(): StoreAddress
++ getType(): String
++ getCapacity(): int
++ getTableNumber(): int
++ getUsedCapacity(): int
++ addRequest(request: Request): void
++ getRequests(): List&lt;Request&gt;
++ hasCapacity(numberOfPeople: int): boolean
++ manageRequest(customer: Customer, request: Request, accept: boolean): boolean
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>239</x><y>285</y><w>44</w><h>70</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+accepts / rejects &gt;</panel_attributes><additional_attributes>10;10;150;10;150;670;420;670</additional_attributes></element><element><id>Relation</id><coordinates><x>308</x><y>361</y><w>10</w><h>18</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1..*
+manages &gt;</panel_attributes><additional_attributes>10;160;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>423</x><y>210</y><w>25</w><h>94</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1...*
+find a store &gt;</panel_attributes><additional_attributes>10;920;10;10;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>337</x><y>317</y><w>90</w><h>39</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+calls  &gt;</panel_attributes><additional_attributes>10;360;870;360;870;10</additional_attributes></element><element><id>Relation</id><coordinates><x>273</x><y>146</y><w>20</w><h>3</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>348</x><y>144</y><w>22</w><h>3</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>200;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>294</x><y>443</y><w>25</w><h>22</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+SimpleCalendar
+--
+- date: Date
+--
++ SimpleCalendar()
++ SimpleCalendar(date: Date)
++ setDate(date: Date): void
++ getDate(): Date
++ addDays(days: int): void
++ subtractDays(days: int): void
++ getDayOfWeek(): String
++ isLeapYear(year: int): boolean
++ equals(other: Object): boolean
++ hashCode(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>306</x><y>422</y><w>3</w><h>23</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;210</additional_attributes></element><element><id>Relation</id><coordinates><x>305</x><y>464</y><w>3</w><h>13</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element></diagram>

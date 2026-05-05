@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- This LinearLayout will hold all the views and can be scrolled -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- EditText for Number of People -->
+        <EditText
+            android:id="@+id/edtNumOfPeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of people"
+            android:inputType="number"/>
+
+        <!-- EditText for Comment -->
+        <EditText
+            android:id="@+id/edtComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comment"/>
+
+        <!-- DatePicker for selecting Date -->
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- TimePicker for selecting Time -->
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmitRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Request"/>
+    </LinearLayout>
+
+</android.widget.ScrollView>

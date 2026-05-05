@@ -1,0 +1,260 @@
+<diagram program="umletino" version="15.1"><zoom_level>3</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>12</x><y>12</y><w>120</w><h>27</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Package:: com.example.reservation.view.Customer.MainMenu
+MainMenuView
+--
++ updateResults( results :List&lt;String&gt;)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>12</x><y>45</y><w>117</w><h>36</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Package:: com.example.reservation.view.Customer.RequestDetails
+CustomerRequestDetailsView
+--
++ displayRequestDetails( request :Requestt):void
++ showSuccessMessage(message:String):void 
++ showErrorMessage(message: String ):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>12</x><y>87</y><w>111</w><h>33</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Package:: com.example.reservation.view.Customer.Requests
+CustomerRequestReservationView
+--
++ displayRequestList( requests: List&lt;Request&gt;): void
++ displayReservationList(reservations: List&lt;Reservation&gt; ): void
++ showErrorMessage(message: String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>144</x><y>9</y><w>90</w><h>36</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Package::com.example.reservation.view.MainLogin
+MainLoginView
+--
++ ManageStoreOwnerLogin(): void
++ ManageStoreOwnerSignUp():void
++ ManageCustomerLogin():void
++ ManageCustomerSignUp():void 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>141</x><y>54</y><w>117</w><h>81</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Package::com.example.reservation.view.StoreOwner.AddStore
+AddStoreView 
+--
++ showErrorMessage(String title, String message); void 
++ showSuccessMessage(String message);void 
++ setCityOptions(List&lt;String&gt; cities);void 
++ setCategoryOptions(List&lt;String&gt; categories); void 
++ getStoreName(); String 
++ getStreet(); String 
++ getStreetNumber();String 
++ getCity();String 
++ getCountry(); String 
++ getPostalCode();String 
++ getStoreType(); String 
++ getCapacity(); int 
++ getTableNumber(); int </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>249</x><y>9</y><w>117</w><h>30</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+package::com.example.reservation.view.StoreOwner.MainMenu
+MainMenuView 
+--
++ displayStores(List&lt;Store&gt; stores); void
++ showNoStoresMessage();void 
+
+ 
+  
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>261</x><y>51</y><w>120</w><h>33</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Package::com.example.reservation.view.StoreOwner.RequestDetails
+RequestDetailsView
+--
++ displayRequestDetails(Request request);void 
++ showSuccessMessage(String message);void 
++ showErrorMessage(String message);void 
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>132</y><w>138</w><h>57</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Package::com.example.reservation.view.StoreOwner.RequestReservationList
+ RequestReservationView 
+--
+ +displayReservationList(List&lt;Reservation&gt; reservations); void
+ +showErrorMessage(String message);void
++displayRequestList(List&lt;Request&gt; requests);void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>93</y><w>108</w><h>57</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Package: com.example.reservation.view.StoreOwner.Requests;
+ RequestsView 
+--
+    + displayStores(List&lt;Store&gt; stores); void
+    +showNoStoresMessage();void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>147</x><y>144</y><w>114</w><h>30</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Package::com.example.reservation.view.StoreOwner.StoreDetails;
+StoreDetailsView 
+--
++displayStoreDetails(Store store); void
++showErrorMessage(String message);void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>159</y><w>111</w><h>81</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.viewFani.StoreOwner.Edit;
+StoreOwnerEditView 
+-
+
+  	+int getId();
+  	+String getName();
+       +String getPhone();
+       + String getEmail();
+        +String getAfm();
+        +String getPassword();
+       + void setName(String value);
+       + void setTel(String value);
+        +void setEmail(String value);
+       + void setAfm(String value);
+        +void setPassword(String value);
+        +void successfullyFinishActivity(String message);
+       + void showErrorMessage( String message);
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>147</x><y>183</y><w>114</w><h>57</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.viewFani.StoreOwner.LogIn;
+StoreOwnerLogInView 
+--
+
+    +void setUserName(String name);
+
+    +void setPassword(String password);
+
+    +void succesfullyLogedIn(String message);
+
+    +void showErrorMessage(String message);
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>6</x><y>195</y><w>114</w><h>72</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.viewFani.StoreOwner.Profile;
+StoreOwnerProfileView 
+--
+     +String getName();
+     +void setName(String value);
+     +void setEmail(String value);
+     +void setTel(String value);
+     +void setAfm(String value);
+     +void setPassword(String value);
+     +void startEdit(String name);
+     +void setId(String value);
+     +void showToast(String value);
+     +void startEditActivity(int ownerId, String userName, String email, String afm, String phone, String password);
+     +void startDelete(String title, String message);
+     +void doDeleteAndFinish(String message);
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>12</y><w>117</w><h>54</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.viewFani.StoreOwner.SignUp;
+ StoreOwnerSignUpView 
+--
+   + void setUserName(String name);
+    +void setEmail(String email);
+    +void setPassword(String password);
+    +void setTel (String tel);
+    +void setAFM(String afm);
+   + void successfullySignUp(String message);
+    +void showErrorMessage(String message);
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>399</x><y>78</y><w>111</w><h>78</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.viewNef.Customer.Edit;
+CustomerEditView
+--
+    +String getName();
+    +String getUsername();
+    +String getTel();
+    +String getEmail();
+    +String getPassword();
+    +void setUsername(String value);
+   + void setName(String value);
+   + void setTel(String value);
+    +void setEmail(String value);
+    +void setPassword(String value);
+    +void successfullyFinishActivity(String message);
+    +void showErrorMessage( String message);
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>402</x><y>174</y><w>108</w><h>48</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.viewNef.Customer.LogIn;
+CustomerLoginView 
+--
+
+    +void setUsername(String username);
+    +void setPassword(String password);
+    +void succesfullyLogedIn(String message);
+    +void showErrorMessage(String message);
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>525</x><y>12</y><w>177</w><h>66</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.viewNef.Customer.Profile;
+CustomerProfileView 
+--
+    +String getName();
+    +void setName(String value);
+    +void setEmail(String value);
+    +void setPhone(String value);
+    +void setPassword(String value);
+    +void setId(String value);
+    +void showToast(String value);
+    +void startEditActivity(int customerId, String name, String email, String phone, String password);
+    +void startDelete(String title, String message);
+   + void doDeleteAndFinish(String message);
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>531</x><y>93</y><w>132</w><h>51</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.viewNef.Customer.SignUp;
+ CustomerSignUpView 
+--
+    +void setName (String name);
+    +void setUserName(String userName);
+   + void  setEmail(String email);
+    +void setPassword(String password);
+    +void setTel (String tel);
+    +void showErrorMessage(String message);
+    +void successfullySignUp(String message);
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>654</x><y>165</y><w>99</w><h>45</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.dao;
+CustomerDAO 
+--
+    +Customer find(String username);
+    +Customer findbyid(int customerid);
+    +void save(Customer customer);
+    +void delete(Customer customer);
+    +List&lt;Customer&gt; findAll();
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>534</x><y>156</y><w>87</w><h>33</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.dao;
+ CurrentUserDAO 
+--
+    +void save(User user);
+    +void delete(User user);
+    +User retrieve();
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>531</x><y>204</y><w>108</w><h>48</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.dao;
+ RequestDAO 
+--
+    +Request find(int reservationID);
+    +List&lt;Request&gt; getRequestsByStoreId(int storeId);
+    +List&lt;Request&gt; getRequestsByCustomerId(int customerid);
+    +void save(Request entity);
+    +void delete(Request entity);
+    +List&lt;Request&gt; findAll();
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>402</x><y>231</y><w>105</w><h>48</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.dao;
+ReservationDAO
+--
+   + Reservation find(int reservationID);
+    +void save(Reservation entity);
+    +void delete(Reservation entity);
+   +List&lt;Reservation&gt; getReservationsByStoreId(int storeId);
+    +List&lt;Reservation&gt; findAll();
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>153</x><y>255</y><w>108</w><h>57</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.dao;
+ StoreDAO 
+--
+    +List&lt;Store&gt; findAll();
+    +Store find(int storeId);
+    +void delete(Store storeId);
+    +void save(Store store);
+    +List&lt;Store&gt; findAllByOwnerId(int ownerId);
+   +void addStore(Store store);
+    +Set&lt;Store&gt; findByLocation(String address);
+    +Set&lt;Store&gt; findByCategory(String category);
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>294</x><y>267</y><w>72</w><h>42</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+package com.example.reservation.dao;
+StoreOwnerDAO
+--
+    +void save(StoreOwner storeOwner);
+   +void delete(StoreOwner storeOwner);
+    +StoreOwner find(String name);
+    +List&lt;StoreOwner&gt; findAll();
+
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

@@ -1,0 +1,52 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes
+
+
+
+</help_text><element><id>UMLActor</id><coordinates><x>99</x><y>0</y><w>54</w><h>99</h></coordinates><panel_attributes>Πελάτης</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>288</x><y>0</y><w>90</w><h>27</h></coordinates><panel_attributes>_:ReservationUI_
+bg=pink</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>81</y><w>27</w><h>711</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;770</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>486</x><y>0</y><w>135</w><h>27</h></coordinates><panel_attributes>_:ReservationController_
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>117</x><y>108</y><w>18</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>324</x><y>18</y><w>27</w><h>774</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;840</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>324</x><y>108</y><w>18</w><h>90</h></coordinates><panel_attributes>
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>117</x><y>243</y><w>18</w><h>144</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>252</y><w>216</w><h>36</h></coordinates><panel_attributes>lt=-&gt;&gt;
+Αίτημα Κράτησης</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>540</x><y>117</y><w>18</w><h>63</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>171</y><w>216</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+Εμφάνιση Καταστημάτων</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>324</x><y>252</y><w>18</w><h>126</h></coordinates><panel_attributes>
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>270</y><w>225</w><h>36</h></coordinates><panel_attributes>lt=-&gt;&gt;
+create_request(request)</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>540</x><y>261</y><w>18</w><h>90</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>342</y><w>189</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+show_request(request)</panel_attributes><additional_attributes>10;40;60;40;60;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>324</x><y>513</y><w>18</w><h>216</h></coordinates><panel_attributes>
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>540</x><y>540</y><w>18</w><h>171</h></coordinates><panel_attributes>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>117</x><y>513</y><w>18</w><h>216</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>117</y><w>216</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+Αναζήτηση Καταστημάτων</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>72</x><y>225</y><w>522</w><h>216</h></coordinates><panel_attributes>loop</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>72</x><y>477</y><w>522</w><h>297</h></coordinates><panel_attributes>alt
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cancel Reservation
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>540</y><w>225</w><h>36</h></coordinates><panel_attributes>lt=-&gt;&gt;
+Show_requests(request)</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>612</y><w>216</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+Επιλογή Κράτησης προς Ακύρωση</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>639</y><w>216</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+Επιβεβαίωση Ακύρωσης</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>504</y><w>216</w><h>36</h></coordinates><panel_attributes>lt=-&gt;&gt;
+ Προβολή Αιτημάτων</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>18</y><w>27</w><h>774</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;840</additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>306</y><w>225</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;.
+request</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>324</y><w>216</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;.
+request</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>567</y><w>225</w><h>36</h></coordinates><panel_attributes>lt=&lt;..
+requests</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>585</y><w>216</w><h>36</h></coordinates><panel_attributes>lt=&lt;..
+requests</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>657</y><w>225</w><h>36</h></coordinates><panel_attributes>lt=-&gt;&gt;
+cancel_request(request)</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>684</y><w>225</w><h>45</h></coordinates><panel_attributes>lt=&lt;..
+request_canceled
+</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>693</y><w>216</w><h>45</h></coordinates><panel_attributes>lt=&lt;..
+request_canceled
+</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>27</y><w>27</w><h>774</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;840</additional_attributes></element></diagram>

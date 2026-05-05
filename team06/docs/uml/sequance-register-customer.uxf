@@ -1,0 +1,48 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLActor</id><coordinates><x>30</x><y>0</y><w>60</w><h>110</h></coordinates><panel_attributes>Πελάτης</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>50</x><y>60</y><w>30</w><h>790</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;770</additional_attributes></element><element><id>Relation</id><coordinates><x>50</x><y>100</y><w>270</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+δημιουργία λογαριασμού</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>260</x><y>0</y><w>100</w><h>30</h></coordinates><panel_attributes>:AccountUI
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>50</x><y>180</y><w>270</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+write data</panel_attributes><additional_attributes>10;20;250;20</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>20</y><w>30</w><h>830</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;810</additional_attributes></element><element><id>Relation</id><coordinates><x>50</x><y>230</y><w>270</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+insertData(data)</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>300</x><y>80</y><w>20</w><h>720</h></coordinates><panel_attributes>
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>120</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=-&gt;&gt;
+CreateAccount(customer)</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>160</y><w>270</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+data field</panel_attributes><additional_attributes>10;20;250;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>10</x><y>300</y><w>900</w><h>330</h></coordinates><panel_attributes>alt
+--
+
+
+
+
+
+
+Alternative Flow A:Wrong data.
+
+
+
+
+
+
+
+
+
+
+
+ 
+Alternative Flow B: Rejection.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>50</x><y>380</y><w>270</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+show_failed_to_create(customer)</panel_attributes><additional_attributes>10;20;250;20</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>350</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+error</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>760</x><y>0</y><w>100</w><h>30</h></coordinates><panel_attributes>:Account
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>500</x><y>0</y><w>120</w><h>30</h></coordinates><panel_attributes>:AccountController
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>20</y><w>30</w><h>820</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;800</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>550</x><y>100</y><w>20</w><h>650</h></coordinates><panel_attributes>
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>20</y><w>30</w><h>810</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;790</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>330</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+λανθασμένα στοιχεία</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>800</x><y>280</y><w>20</w><h>450</h></coordinates><panel_attributes>
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>260</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=-&gt;&gt;
+dataValidation(data)</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>300</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-
+declineCreation(customer)</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>0</x><y>430</y><w>980</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;960;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>640</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-
+acceptCreation(customer)</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>450</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-
+customer_found(customer)</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>490</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+cancel creation</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>510</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+error</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>50</x><y>540</y><w>270</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+connect(customer)</panel_attributes><additional_attributes>10;20;250;20</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>650</y><w>170</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+SaveCustomer()</panel_attributes><additional_attributes>20;40;60;40;60;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>810</x><y>680</y><w>20</w><h>40</h></coordinates><panel_attributes>
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>700</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+activateAcc(customer)</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>720</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+createAccount(customer)</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>50</x><y>770</y><w>270</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+succesfully created account</panel_attributes><additional_attributes>10;20;250;20</additional_attributes></element></diagram>

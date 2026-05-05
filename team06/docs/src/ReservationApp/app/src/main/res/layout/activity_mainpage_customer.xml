@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_color"
+    tools:context=".view.StoreOwner.MainMenu.MainMenuActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rounded_button"
+        android:drawableStart="@drawable/searc_icon"
+        android:drawablePadding="8dp"
+        android:ellipsize="end"
+        android:hint="Search..."
+        android:inputType="text"
+        android:maxLines="3"
+        android:minLines="1"
+        android:padding="10dp"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinner_location_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rounded_button"
+        android:spinnerMode="dropdown"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/choose_category_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Choose Category"
+        android:textSize="16sp" />
+
+
+    <ListView
+        android:id="@+id/item_list_view"
+        android:layout_width="400dp"
+        android:layout_height="564dp"
+        android:layout_below="@+id/spinner_location_filter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:paddingTop="12dp" />
+
+    <ScrollView
+        android:id="@+id/scroll_view_categories"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:maxHeight="200dp"> <!-- Limit the height to 200dp -->
+
+        <LinearLayout
+            android:id="@+id/category_filter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- Bottom Menu -->
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="0.3in"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_button"
+        android:elevation="0.6in"
+        android:layout_margin="0.15in">
+
+        <!-- Profile Button -->
+        <ImageButton
+            android:id="@+id/bottom_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_person_24"
+            android:contentDescription="Profile"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <!-- Home Button -->
+        <ImageButton
+            android:id="@+id/bottom_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_home_24"
+            android:contentDescription="Home"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <!-- Requests Button -->
+        <ImageButton
+            android:id="@+id/bottom_requests"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_check_24"
+            android:contentDescription="Requests"
+            android:background="?android:attr/selectableItemBackground" />
+
+    </LinearLayout>
+</RelativeLayout>

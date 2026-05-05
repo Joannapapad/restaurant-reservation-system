@@ -1,0 +1,66 @@
+<diagram program="umletino" version="15.1"><zoom_level>6</zoom_level><element><id>UMLClass</id><coordinates><x>18</x><y>204</y><w>126</w><h>36</h></coordinates><panel_attributes>Customer
+--
+costumerID : int
+name : userName</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>186</y><w>126</w><h>72</h></coordinates><panel_attributes>storeOwner
+--
+ownerID : int
+name : storeName
+AFM : String
+location : String
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>216</y><w>198</w><h>150</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=*
+has a</panel_attributes><additional_attributes>300;230;300;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>618</x><y>354</y><w>126</w><h>84</h></coordinates><panel_attributes>Store
+--
+storeID : int
+name: string
+address: string
+location: string
+type: string 
+capacity: int 
+tableNum : int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>144</x><y>54</y><w>144</w><h>78</h></coordinates><panel_attributes>User
+--
+name : String
+lastName : String
+email : String
+phone : String
+password : String
+userType : enum {Customer, storeOwner}</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>72</x><y>96</y><w>84</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;10;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>282</x><y>90</y><w>180</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;280;10;280;160</additional_attributes></element><element><id>UMLClass</id><coordinates><x>132</x><y>342</y><w>234</w><h>96</h></coordinates><panel_attributes>ReservationRequest
+--
+user : User
+store : Store
+dateTime: datetime
+numOfPeople : int
+reservationStatus: enum {Pending, Approved, Rejected, Canceled}
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>72</x><y>234</y><w>72</w><h>162</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+makes </panel_attributes><additional_attributes>10;10;10;240;100;240</additional_attributes></element><element><id>UMLClass</id><coordinates><x>102</x><y>480</y><w>126</w><h>78</h></coordinates><panel_attributes>Review
+--
+reviewID : int
+rating : float
+comment : String
+date : datetime</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>24</x><y>516</y><w>222</w><h>150</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+writes</panel_attributes><additional_attributes>350;220;20;220;20;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>222</x><y>252</y><w>282</w><h>294</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+has</panel_attributes><additional_attributes>10;460;430;460;430;10</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>384</y><w>270</w><h>30</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+approves / rejects </panel_attributes><additional_attributes>430;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>234</x><y>594</y><w>126</w><h>72</h></coordinates><panel_attributes>Reservation
+--
+reservationID : int 
+user : User
+store : Store
+dateTime: datetime
+numOfPeople : int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>354</x><y>432</y><w>342</w><h>228</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+accepts</panel_attributes><additional_attributes>10;350;540;340;540;10</additional_attributes></element></diagram>

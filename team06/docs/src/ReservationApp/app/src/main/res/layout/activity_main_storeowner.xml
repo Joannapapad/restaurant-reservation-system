@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_color"
+    tools:context=".view.StoreOwner.MainMenu.MainMenuActivity">
+
+    <!-- Stores Text on the top left -->
+    <TextView
+        android:id="@+id/storesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stores"
+        android:textSize="25sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="22dp" />
+
+    <!-- + Button on the top right -->
+    <ImageButton
+        android:id="@+id/plusButton"
+        android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:src="@drawable/baseline_add_24"
+    android:contentDescription="Add"
+    android:background="@drawable/rounded_button"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="22dp"
+    android:layout_marginTop="22dp"
+    android:scaleType="centerInside" /> <!-- This ensures the image scales properly within the button -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_stores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="13dp"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical"
+        tools:listitem="@layout/store_item" />
+
+    <!-- Bottom Menu -->
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="0.3in"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_button"
+        android:elevation="0.6in"
+        android:layout_margin="0.15in">
+
+        <!-- Profile Button -->
+        <ImageButton
+            android:id="@+id/bottom_profile"
+            android:layout_width="0dp"
+            android:layout_height="0.3in"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_person_24"
+            android:contentDescription="Profile"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <!-- Home Button -->
+        <ImageButton
+            android:id="@+id/bottom_home"
+            android:layout_width="0dp"
+            android:layout_height="0.3in"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_home_24"
+            android:contentDescription="Home"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <!-- Requests Button -->
+        <ImageButton
+            android:id="@+id/bottom_requests"
+            android:layout_width="0dp"
+            android:layout_height="0.3in"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_check_24"
+            android:contentDescription="Requests"
+            android:background="?android:attr/selectableItemBackground" />
+
+    </LinearLayout>
+
+</RelativeLayout>

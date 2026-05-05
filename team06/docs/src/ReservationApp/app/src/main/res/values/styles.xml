@@ -1,0 +1,29 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="SecondaryTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/light_backround</item>
+        <item name="colorPrimaryDark">@color/primary_color</item>
+        <item name="colorAccent">@color/secondary_color</item>
+        <item name="colorButtonNormal">@color/light_backround</item>
+        <!--make text selector black <item name="colorControlActivated">@color/colorPrimaryDark</item>-->
+
+        <item name="colorControlNormal">@color/white</item>
+        <item name="actionButtonStyle">@color/white</item>
+        <item name="selectableItemBackground">@color/white</item>
+        <item name="selectableItemBackgroundBorderless">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:editTextColor">@color/white</item>
+        <item name="android:textCursorDrawable">@drawable/ic_store_owner</item>
+    </style>
+
+    <style name="SecondaryTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

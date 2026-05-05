@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/baseline_check_24"
+        android:roundIcon="@drawable/baseline_check_24"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".view.Customer.StoreDetail.CustomerStoreDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewFani.Customer.StoreSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.StoreOwner.Edit.StoreOwnerEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Customer.Edit.CustomerEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Customer.LogIn.CustomerLogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.StoreOwner.LogIn.StoreOwnerLogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.MainLogin.MainLoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.Customer.SignUp.CustomerSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.StoreOwner.SignUp.StoreOwnerSignUpActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.StoreOwner.MainMenu.MainMenuActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.StoreOwner.Profile.StoreOwnerProfileActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.Customer.Profile.CustomerProfileActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.StoreOwner.Requests.RequestsActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.Customer.MainMenu.MainMenuActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.StoreOwner.AddStore.AddStoreActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.StoreOwner.StoreDetails.StoreDetailsActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.StoreOwner.RequestDetails.RequestDetailsActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.StoreOwner.RequestReservationList.RequestReservationActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.Customer.RequestReservation.CustomerRequestsActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.Customer.RequestDetails.CustomerRequestDetailsActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+    </application>
+
+</manifest>

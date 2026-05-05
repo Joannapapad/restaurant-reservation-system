@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_backround">
+
+    <!-- First TextView -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Reservation App!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingStart="40dp"
+        android:paddingTop="0.5in"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Second TextView -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What are you using the app as?"
+        android:textSize="18sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+    <ImageView
+        android:id="@+id/ImageCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/ic_customer" />
+
+    <Button
+        android:id="@+id/btnCustomerSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_button"
+        android:text="Sign Up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageCustomer" />
+
+    <Button
+        android:id="@+id/btnCustomerLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="92dp"
+        android:background="@drawable/rounded_button"
+        android:text="log in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageCustomer" />
+
+    <ImageView
+        android:id="@+id/imageStoreOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCustomerSignUp"
+        app:srcCompat="@drawable/ic_store_owner" />
+
+    <Button
+        android:id="@+id/btnStoreOwnerSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_button"
+        android:text="sign up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageStoreOwner" />
+
+    <Button
+        android:id="@+id/btnStoreOwnerLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="92dp"
+        android:background="@drawable/rounded_button"
+        android:text="log in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageStoreOwner" />
+
+    <!-- Customer Button -->
+<!--    <Button-->
+<!--        android:id="@+id/customer_button"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:drawableTop="@drawable/ic_customer"-->
+<!--    android:drawablePadding="8dp"-->
+<!--    android:text="Customer"-->
+<!--    android:textSize="18sp"-->
+<!--    android:padding="0.2in"-->
+<!--    android:backgroundTint="@color/secondary_color"-->
+<!--    app:layout_constraintWidth_percent="0.6"-->
+<!--    app:layout_constraintTop_toBottomOf="@id/textView2"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/storeowner_button"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:backgroundTint="@color/secondary_color"-->
+<!--        android:drawableTop="@drawable/ic_store_owner"-->
+<!--        android:drawablePadding="8dp"-->
+<!--        android:padding="0.2in"-->
+<!--        android:text="Store Owner"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/customer_button"-->
+<!--        app:layout_constraintWidth_percent="0.6" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

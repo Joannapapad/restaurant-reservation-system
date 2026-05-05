@@ -1,0 +1,43 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLActor</id><coordinates><x>9</x><y>0</y><w>108</w><h>99</h></coordinates><panel_attributes>Καταστηματάρχης</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>54</x><y>81</y><w>27</w><h>576</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;620</additional_attributes></element><element><id>Relation</id><coordinates><x>54</x><y>81</y><w>225</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+Δημιουργία Λογαριασμού</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>225</x><y>0</y><w>90</w><h>27</h></coordinates><panel_attributes>:AccountUI
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>261</x><y>18</y><w>27</w><h>648</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;700</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>261</x><y>63</y><w>18</w><h>540</h></coordinates><panel_attributes>
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>387</x><y>0</y><w>108</w><h>27</h></coordinates><panel_attributes>:AccountController
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>18</y><w>27</w><h>639</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;690</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>90</y><w>180</w><h>36</h></coordinates><panel_attributes>lt=-&gt;&gt;
+CreateAccount(storeOwner)</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>432</x><y>81</y><w>18</w><h>495</h></coordinates><panel_attributes>
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>585</x><y>0</y><w>90</w><h>27</h></coordinates><panel_attributes>:Accoount
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>117</y><w>180</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+input data</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>54</x><y>126</y><w>216</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+Συπλήρωση πεδίων </panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>54</x><y>153</y><w>225</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+Είσοδος Στοιχείων</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>180</y><w>180</w><h>36</h></coordinates><panel_attributes>lt=-&gt;&gt;
+Check(input data)</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>621</x><y>18</y><w>27</w><h>639</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;690</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>621</x><y>144</y><w>18</w><h>414</h></coordinates><panel_attributes>
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>441</x><y>513</y><w>198</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+create</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>540</y><w>180</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+create</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>63</x><y>567</y><w>216</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+επιτυχία εγγραφής</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>630</x><y>495</y><w>18</w><h>36</h></coordinates><panel_attributes>
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>477</y><w>153</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+SaveCustomer()</panel_attributes><additional_attributes>20;30;60;30;60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>441</x><y>207</y><w>198</w><h>36</h></coordinates><panel_attributes>lt=-&gt;&gt;
+Deny(input data)</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element><element><id>Relation</id><coordinates><x>441</x><y>234</y><w>198</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+wrong data</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>252</y><w>180</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+Error </panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>54</x><y>261</y><w>225</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+Αποτυχία εγγραφής</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>9</x><y>207</y><w>738</w><h>252</h></coordinates><panel_attributes>alt
+--
+
+
+
+
+
+Alternative Flow A:Wrong data.
+
+
+
+
+
+
+
+ 
+Alternative Flow B: Rejection.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>0</x><y>306</y><w>765</w><h>27</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;830;10</additional_attributes></element><element><id>Relation</id><coordinates><x>441</x><y>324</y><w>198</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;-
+AlreadyExist(input data)</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>441</x><y>351</y><w>198</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+deny</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>369</y><w>180</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+deny</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>54</x><y>396</y><w>225</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+SignIn()</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>441</x><y>459</y><w>198</w><h>36</h></coordinates><panel_attributes>lt=-&gt;&gt;
+Accept(input data)</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element></diagram>
