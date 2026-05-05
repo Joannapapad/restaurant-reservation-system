@@ -101,29 +101,29 @@ Customers have access to a personal dashboard that allows:
 
 ### Use Case Diagram
 
-![Use Case Diagram](docs/markdown/uml/use_case_diagram.png)
+![Use Case Diagram](team06/docs/markdown/uml/use_case_diagram.png)
 
 ---
 
 ### Class Diagram
 
-![Full Class Diagram](docs/markdown/uml/full-class-diagram.png)
+![Full Class Diagram](team06/docs/markdown/uml/full-class-diagram.png)
 
 ---
 
 ## Functional Requirements
 
 ### UC1 – User Registration  
-[Details](/docs/markdown/uc1-register-costumer.md)
+[Details](team06/docs/markdown/uc1-register-costumer.md)
 
 ### UC2 – Store Owner Registration  
-[Details](/docs/markdown/uc2-register-store-owner.md)
+[Details](team06/docs/markdown/uc2-register-store-owner.md)
 
 ### UC3 – Request Management  
-[Details](/docs/markdown/uc3-manage-requests.md)
+[Details](team06/docs/markdown/uc3-manage-requests.md)
 
 ### UC4 – Table Reservation  
-[Details](/docs/markdown/uc4-table-reservation.md)
+[Details](team06/docs/markdown/uc4-table-reservation.md)
 
 ### UC5 – Ratings
 
@@ -132,7 +132,7 @@ Customers have access to a personal dashboard that allows:
 ### UC7 – Upcoming Reservations  
 
 ### UC8 – Store Search  
-[Details](/docs/markdown/uc8-search-stores.md)
+[Details](team06/docs/markdown/uc8-search-stores.md)
 
 ---
 
