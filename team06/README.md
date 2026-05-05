@@ -117,8 +117,8 @@ UC6 Occupancy Statistics
 
 UC7 Upcoming Reservations
 
-UC8 [Search Stores](/docs/markdown/uc8-search-stores.md)
+UC8 [Search Stores](docs/markdown/uc8-search-stores.md)
 
 ---
 
-![Full Class Diagram](/docs/markdown/uml/full-class-diagram.png)
+![Full Class Diagram](docs/markdown/uml/full-class-diagram.png)
