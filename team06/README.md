@@ -1,64 +1,124 @@
-# Πλατφόρμα Διαδικτυακής Κράτησης Και Διαχείρησης χώρων εστίασης
+# Online Reservation and Restaurant Space Management Platform
 
-## Τεκμηρίωση Use Case Diagram
+## Use Case Diagram Documentation
 
-Το λογισμικό στοχεύει στη βελτιστοποίηση της εμπειρίας τόσο των πελατών όσο και των καταστηματάρχων. Η διαχείριση κρατήσεων γίνεται εύκολη και σύγχρονη, χωρίς την ανάγκη τηλεφωνικών επικοινωνιών, ενώ βελτιώνει την πληροφόρηση των πελατών και την αποδοτική διαχείριση των καταστημάτων, μέσω στατιστικών και φίλτρων αναζήτησης.
+The software aims to optimize the experience for both customers and store owners. Reservation management becomes easy and modern, eliminating the need for phone calls, while improving customer information access and efficient business management through statistics and search filters.
 
-### 1. Δημιουργια Λογαριασμών και Προφίλ χρηστών:
-**Πελάτες:** Δημιουργούν λογαριασμό με email, καταχωρούν στοιχεία επικοινωνίας (ονοματεπώνυμο, τηλέφωνο) και έχουν πρόσβαση σε δυνατότητες κράτησης και αξιολόγησης καταστημάτων. 
+---
 
-**Καταστηματάρχες:** Δημιουργούν προφίλ για το κατάστημά τους, συμπληρόνοντας πληροφορίες όπως είδος χώρου, επίπεδο τιμών, τοποθεσία και χωρητικότητα σε αριθμό τραπεζιών. 
+## 1. User Account and Profile Creation
 
-### 2. Κρατήσεις και Διαχείριση Διαθεσιμότητας
-**Κριτήρια Αναζήτησης:** οι πελάτες θα αναζητούν διαθεσιμότητα καταστημάτων εστίασης εισάγοντας κριτήρια όπως ημερομηνία, περιοχή (πχ. Χαλάνδρι, Γαλάτσι), ελάχιστη αξιολόγηση, επίπεδο τιμών καθώς και πλήθος ατόμων. Εναλλακτικά, ο πελάτης αναζητά καταστήματα με βάση την χρήση της τοποθεσίας του και των προσωπικών προτιμήσεων του.
+### Customers:
+Customers create an account using email, enter contact details (full name, phone number), and gain access to reservation and store rating features.
 
-**Διαθεσιμότητα:** Η εφαρμογή εμφανίζει μόνο καταστήματα με επαρκή διαθεσιμότητα τραπεζιών για την εξυπηρέτηση της κράτησης (ένα τραπέζι για 4 άτομα, 2 τραπέζια για 5-6 άτομα, 3 τραπέζια για 7-8 άτομα κ.ο.κ.).
+### Store Owners:
+Store owners create a profile for their business, providing information such as:
+- Type of venue
+- Price level
+- Location
+- Capacity (number of tables)
 
-**Υποβολή Αιτημάτων:** Οι πελάτες υποβάλλουν αιτήματα κράτησης για ένα ή περισσότερα καταστήματα, καταχωρώντας την ημέρα, ώρα και αριθμό ατόμων. Η επιλογή καταστήματος επιτρέπει και προσθήκη σημειώσεων. (π.χ. προτίμηση τοποθεσίας τραπεζιού).
+---
 
-**Έγκριση ή Απόρριψη Αιτημάτων:** Ο καταστηματάρχης έχει τη δυνατότητα να εγκρίνει ή να απορρίπτει αιτήματα κράτησης. Σε περίπτωση έγκρισης, η εφαρμογή ακυρώνει αυτόματα τυχόν άλλες αιτήσεις του πελάτη για την ίδια ημερομονία. 
+## 2. Reservations and Availability Management
 
-### 3. Διαχείριση Κρατήσεων και Ακύρωσης 
+### Search Criteria:
+Customers search for restaurant availability by entering criteria such as:
+- Date
+- Area (e.g. Chalandri, Galatsi)
+- Minimum rating
+- Price level
+- Number of people
 
-**Προσωπικό Ημερολόγιο:** Οι πελάτες έχουν πρόσβαση σε ημερολόγιο κρατήσεων όπου εμφανίζονται οι ερχόμενες κρατήσεις τους, με δυνατότητα παρακολούθησης, ακύρωσης και λήψης ειδοποιήσεων την ημέρα της κράτησης. 
+Alternatively, users can search based on their location and personal preferences.
 
-**Ακύρωση Κρατήσεων:** Οι πελάτες μπορούν να ακυρώνουν κρατήσεις απευθείας μέσα από την εφαρμογή. 
+---
 
-### 4. Αξιολόγηση και Στατιστικά Στοιχεία 
+### Availability:
+The application only displays restaurants with sufficient table availability to handle the reservation request:
+- 1 table for 4 people  
+- 2 tables for 5–6 people  
+- 3 tables for 7–8 people  
+- etc.
 
-**Αξιολόγηση Καταστημάτων:** Οι πελάτες μπορούν να αξιολογούν τα καταστήματα στα οποία έχουν πραγματοποιήσει κράτηση.  
+---
 
-**Στατιστικά Πληρότητας:** Οι  καταστηματάρχες έχουν πρόσβαση σε στατιστικά πληρότητας των καταστημάτων τους, ενώ οι πελάτες μπορούν να βλέπουν γενικά στατιστικά στοιχεία πληρότητας για συγκεκριμένες ημερομηνίες, για καλύτερη επιλογή χρόνου και καταστήματος.
+### Request Submission:
+Customers submit reservation requests for one or more restaurants, specifying:
+- Date
+- Time
+- Number of people
 
+They may also add optional notes (e.g. seating preferences).
+
+---
+
+### Approval or Rejection:
+The store owner can approve or reject reservation requests.
+
+If a request is approved:
+- The system automatically cancels any other pending requests from the same customer for the same date.
+
+---
+
+## 3. Reservation Management and Cancellation
+
+### Personal Calendar:
+Customers have access to a reservation calendar showing upcoming bookings.  
+They can:
+- View reservations
+- Cancel reservations
+- Receive notifications on the reservation day
+
+---
+
+### Reservation Cancellation:
+Customers can cancel reservations directly through the application.
+
+---
+
+## 4. Ratings and Statistics
+
+### Store Ratings:
+Customers can rate restaurants they have visited and made reservations at.
+
+### Occupancy Statistics:
+Store owners can access occupancy statistics for their venues.
+
+Customers can also view general occupancy statistics for specific dates to help choose the best time and restaurant.
+
+---
 
 ## Use Case Diagram
 
-Ακολουθεί το διάγραμμα περιπτώσεων του λογισμικού
+Below is the system use case diagram:
 
 ![Use Case Diagram](docs/markdown/uml/use_case_diagram.png)
 
-# Ειδικές Απαιτήσεις
-## Περιπτώσεις Χρήσης 
+---
 
-### Περιγραφές Περιπτώσεων Χρήσης 
+# Special Requirements
 
-ΠΧ1 [Εγγραφή Χρήστη](/docs/markdown/uc1-register-costumer.md)
+## Use Cases
 
-ΠΧ2 [Εγγραφή Καταστηματάρχη](/docs/markdown/uc2-register-store-owner.md) 
+### Use Case Descriptions
 
-ΠΧ3 [Διαχείρηση Αιτημάτων](/docs/markdown/uc3-manage-requests.md)
+UC1 [User Registration](/docs/markdown/uc1-register-costumer.md)
 
-ΠΧ4 [Κράτηση Τραπεζιού](/docs/markdown/uc4-table-reservation.md) 
+UC2 [Store Owner Registration](/docs/markdown/uc2-register-store-owner.md)
 
-ΠΧ5 Αξιολογήσεις   
+UC3 [Request Management](/docs/markdown/uc3-manage-requests.md)
 
-ΠΧ6 Στατιστικά Πληρότητας  
+UC4 [Table Reservation](/docs/markdown/uc4-table-reservation.md)
 
-ΠΧ7 Προσεχής Κρατήσεις 
+UC5 Ratings
 
-ΠΧ8 [Αναζήτηση Τραπεζιού](/docs/markdown/uc8-search-stores.md)
+UC6 Occupancy Statistics
 
+UC7 Upcoming Reservations
+
+UC8 [Search Stores](/docs/markdown/uc8-search-stores.md)
+
+---
 
 ![Full Class Diagram](/docs/markdown/uml/full-class-diagram.png)
-
-
