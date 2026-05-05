@@ -103,13 +103,13 @@ Below is the system use case diagram:
 
 ### Use Case Descriptions
 
-UC1 [User Registration](/docs/markdown/uc1-register-costumer.md)
+UC1 [User Registration](docs/markdown/uc1-register-costumer.md)
 
-UC2 [Store Owner Registration](/docs/markdown/uc2-register-store-owner.md)
+UC2 [Store Owner Registration](docs/markdown/uc2-register-store-owner.md)
 
-UC3 [Request Management](/docs/markdown/uc3-manage-requests.md)
+UC3 [Request Management](docs/markdown/uc3-manage-requests.md)
 
-UC4 [Table Reservation](/docs/markdown/uc4-table-reservation.md)
+UC4 [Table Reservation](docs/markdown/uc4-table-reservation.md)
 
 UC5 Ratings
 
